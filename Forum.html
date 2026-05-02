@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+		<meta name="viewpoint" content="width=device-width, inital-scale=1.0">
+		<title>MacroCenter</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<nav>
+		<div class="wrapper">
+        <a href="index.html" class="logo-style">
+            <img src="img/MClogo.png" class="logo" alt="Logo">
+        </a>
+        <ul class="center-nav">
+            <li class="dropdown">
+				<a href="#">MENU</a>
+
+			<ul class="dropdown-menu">
+			  <li><a href="Deals.html">Biggest Deals</a></li>
+			  <li><a href="RecommendedSites.html">Recommended Sites</a></li>
+			  <li><a href="GuideIntoPC.html">Guide Into PC's</a></li>
+			  <li><a href="donate.html">Donate</a></li>
+			  <li><a href="Forum.html">Forum</a></li>
+			</ul>
+			</li>
+		</ul>
+		
+        <a href="#">
+            <img src="img/Cart.png" class="logo2" alt="Cart">
+        </a>
+
+		</div>
+	</nav>
+	<main>
+		<div id="slider">
+			<div><img src="img/Deal1.jpg" alt="front" class="picture"></div>
+			<div><img src="img/Deal2.jpg" alt="front" class="picture"></div>
+			<div><img src="img/Deal3.jpg" alt="front" class="picture"></div>
+		</div>
+	</main>
+	<body>
+<h1>Simple Forum</h1>
+<div class="container">
+<h2>Post Any Questions</h2>
+
+<input id="title" placeholder="Post title">
+<textarea id="content" placeholder="Write something..."></textarea>
+<button onclick="addPost()">Post</button>
+
+<div id="posts"></div>
+</div>
+<footer>
+		Contact Us: <a href="111-222-3333">111-222-3333</a>
+	</footer>
+	<script>
+	$(document).ready(function(){
+	$('#slider').slick({
+	autoplay: true,
+	centerMode: true,
+	centerPadding: '0px',
+    slidesToShow: 1,
+	dots: false,
+	arrows: false
+	});
+	});
+	</script>
+
+	<script>
+	let posts = [];
+
+	function addPost() {
+		const title = document.getElementById("title").value;
+		const content = document.getElementById("content").value;
+
+		if (!title || !content) return alert("Fill everything");
+
+		posts.push({ title, content });
+		renderPosts();
+	}
+
+	function renderPosts() {
+		let html = "";
+		posts.forEach(p => {
+			html += `
+			<div class="post">
+				<h3>${p.title}</h3>
+				<p>${p.content}</p>
+			</div>`;
+		});
+
+		document.getElementById("posts").innerHTML = html;
+	}
+	</script> 
+
+	</body>		
+</html>

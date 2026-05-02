@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+		<meta name="viewpoint" content="width=device-width, inital-scale=1.0">
+		<title>MacroCenter</title>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+		<link href="style.css" rel="stylesheet">
+	</head>
+	<nav>
+		<div class="wrapper">
+        <a href="index.html" class="logo-style">
+            <img src="img/MClogo.png" class="logo" alt="Logo">
+        </a>
+        <ul class="center-nav">
+            <li class="dropdown">
+				<a href="#">MENU</a>
+
+			<ul class="dropdown-menu">
+			  <li><a href="Deals.html">Biggest Deals</a></li>
+			  <li><a href="RecommendedSites.html">Recommended Sites</a></li>
+			  <li><a href="GuideIntoPC.html">Guide Into PC's</a></li>
+			  <li><a href="donate.html">Donate</a></li>
+			  <li><a href="Forum.html">Forum</a></li>
+			</ul>
+			</li>
+		</ul>
+		
+        <a href="#">
+            <img src="img/Cart.png" class="logo2" alt="Cart">
+        </a>
+
+		</div>
+	</nav>
+	<main>
+		<div id="slider">
+			<div><img src="img/Deal1.jpg" alt="front" class="picture"></div>
+			<div><img src="img/Deal2.jpg" alt="front" class="picture"></div>
+			<div><img src="img/Deal3.jpg" alt="front" class="picture"></div>
+		</div>
+	</main>
+	<body>
+		<h1>Recommended Sites</h1>
+
+		<h2>Tech & Deals</h2>
+
+		<div class="site-container">
+
+		  <a href="https://slickdeals.net" target="_blank" class="site-card">
+			<img src="img/slickdeals.png" alt="Slickdeals">
+			<h3>Slickdeals</h3>
+			<p>Find the best tech deals and discounts.</p>
+		  </a>
+
+		  <a href="https://www.amazon.com" target="_blank" class="site-card">
+		  <img src="img/amazon.png" alt="Amazon">
+			<h3>Amazon</h3>
+			<p>Best deals on general products.</p>
+		  </a>
+		  <a href="https://www.microcenter" target="_blank" class="site-card">
+		  <img src="img/microcenter.jpg" alt="MicroCenter">
+			<h3>MicroCenter</h3>
+			<p>Great Introduction into the Tech World with Reliable Staff</p>
+		  </a>
+
+		</div>
+		<br>
+		<h2>Reliable Teachers</h2>
+		<div class="site-container">
+
+		  <a href="https://www.youtube.com/@LinusTechTips" target="_blank" class="site-card">
+			<img src="img/Linus.jpg" alt="Linus">
+			<h3>Linus Tech Tips</h3>
+			<p>Deep Dives Into The Lastest Trends In Tech.</p>
+		  </a>
+
+		  <a href="https://www.youtube.com/@Jayztwocents" target="_blank" class="site-card">
+		  <img src="img/Jayz.jpg" alt="JayzTwoCents">
+			<h3>JayzTwoCents</h3>
+			<p>Dicusses the backend of PC operations and teaches how to navigate them.</p>
+		  </a>
+		  <a href="https://www.tomshardware.com" target="_blank" class="site-card">
+		  <img src="img/tomshardware.png" alt="tomshardware">
+			<h3>Toms Hardware</h3>
+			<p>Dicusses Individual Products In Great Detail and Compares Similar Products</p>
+		  </a>
+
+		</div>
+		<br>
+		<h2>Great Resources</h2>
+		<div class="site-container">
+
+		  <a href="https://pcpartpicker.com" target="_blank" class="site-card">
+			<img src="img/pcpartpicker.jpg" alt="PPP">
+			<h3>PC Part Picker</h3>
+			<p>Allows Users To Build Hypothetical PC's to Check Compability, Use Cases, And Other Uses Builds</p>
+		  </a>
+
+		  <a href="https://www.logicalincrements.com" target="_blank" class="site-card">
+		  <img src="img/logical.png" alt="logical">
+			<h3>Logical Increments</h3>
+			<p>A More Streamlined Version of PPP, Where Builds Are Divided Based On Budget, Use Case, and Parts. Also Shows Specs for Popular Games</p>
+		  </a>
+		  <a href="https://www.reddit.com/r/buildapc/" target="_blank" class="site-card">
+		  <img src="img/reddit.png" alt="Reddit">
+			<h3>Reddit</h3>
+			<p>A User Driven Platform That Has Communities Dedicated To Any Topic Imaginable And Helps Others.</p>
+		  </a>
+
+		</div>
+		<footer>
+		Contact Us: <a href="111-222-3333">111-222-3333</a>
+		</footer>
+		<script>
+		$(document).ready(function(){
+		$('#slider').slick({
+		autoplay: true,
+		centerMode: true,
+		centerPadding: '0px',
+		slidesToShow: 1,
+		dots: false,
+		arrows: false
+		});
+		});
+		</script>
+	</body>	
+</html>
+	
